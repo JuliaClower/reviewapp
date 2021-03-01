@@ -10,16 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_27_212753) do
+ActiveRecord::Schema.define(version: 2021_03_01_040143) do
 
   create_table "reviews", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.string "author"
-    t.integer "star_rating"
+    t.string "star_rating"
     t.date "date_of_review"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "author_location"
+    t.string "lender_name"
   end
 
 end
